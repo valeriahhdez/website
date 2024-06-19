@@ -79,8 +79,8 @@ export function DocsHelp({ markdownFile }: DocsHelpProps) {
 
           <div className='mb-6 mt-4 text-[14px]'>
             <p>
-              Learning JSON Schema is often confusing, but don't worry, we are
-              here to help!.
+              Learning JSON Schema is sometimes confusing, but don't worry, we
+              are here to help!.
             </p>
           </div>
           <div className='my-2 text-[14px]'>
