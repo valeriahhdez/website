@@ -72,13 +72,63 @@ export function DocsHelp({ markdownFile }: DocsHelpProps) {
 
   return (
     <section className='mt-10 mb-4 text-gray-600 dark:text-white'>
-      <h2 className='text-[24px] font-semibold'>Need Help?</h2>
+      <h2 className='text-[24px] font-semibold'>Feedback and Support</h2>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pt-10 border-t border-gray-600'>
         <div>
-          <h3 className='text-xl font-semibold mb-3'>
-            Did you find these docs helpful?
-          </h3>
+          <h3 className='text-xl font-semibold mb-3'>Have a question?</h3>
 
+          <div className='mb-6 mt-4 text-[14px]'>
+            <p>
+              Learning JSON Schema is often confusing, but don't worry, we are
+              here to help!.
+            </p>
+          </div>
+          <div className='my-2 text-[14px]'>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              className='underline'
+              href='https://github.com/orgs/json-schema-org/discussions/new?category=q-a'
+            >
+              <svg
+                className='inline-block select-none align-text-bottom mr-1'
+                aria-hidden='true'
+                role='img'
+                viewBox='0 0 16 16'
+                width='16'
+                height='16'
+                fill='currentColor'
+              >
+                <path d='M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z' />
+              </svg>
+              Ask the community on GitHub
+            </a>
+          </div>
+          <div className='my-2 text-[14px]'>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              className='underline'
+              href='https://json-schema.org/slack'
+            >
+              <svg
+                className='inline-block select-none align-text-bottom mr-1'
+                aria-hidden='true'
+                role='img'
+                viewBox='0 0 16 16'
+                width='16'
+                height='16'
+                fill='currentColor'
+              >
+                <path d='M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z' />
+              </svg>
+              Ask the community on Slack
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 className='text-xl font-semibold mb-3'>Did this doc help you?</h3>
           {!feedbackStatus && (
             <div className='my-6 text-base'>
               <form
@@ -147,7 +197,7 @@ export function DocsHelp({ markdownFile }: DocsHelpProps) {
 
                 {isFormOpen && (
                   <div>
-                    <div className='mb-4'>
+                    <div className='mb-2'>
                       <p>
                         <label
                           className='mb-1 block'
@@ -314,59 +364,6 @@ export function DocsHelp({ markdownFile }: DocsHelpProps) {
                 />
               </svg>
               Learn how to contribute
-            </a>
-          </div>
-        </div>
-
-        <div>
-          <h3 className='text-xl font-semibold mb-3'>Still Need Help?</h3>
-
-          <div className='my-6 text-[14px]'>
-            <p>
-              Learning JSON Schema is often confusing, but don't worry, we are
-              here to help!.
-            </p>
-          </div>
-          <div className='my-2 text-[14px]'>
-            <a
-              target='_blank'
-              rel='noreferrer'
-              className='underline'
-              href='https://github.com/orgs/json-schema-org/discussions/new?category=q-a'
-            >
-              <svg
-                className='inline-block select-none align-text-bottom mr-1'
-                aria-hidden='true'
-                role='img'
-                viewBox='0 0 16 16'
-                width='16'
-                height='16'
-                fill='currentColor'
-              >
-                <path d='M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z' />
-              </svg>
-              Ask the community on GitHub
-            </a>
-          </div>
-          <div className='my-2 text-[14px]'>
-            <a
-              target='_blank'
-              rel='noreferrer'
-              className='underline'
-              href='https://json-schema.org/slack'
-            >
-              <svg
-                className='inline-block select-none align-text-bottom mr-1'
-                aria-hidden='true'
-                role='img'
-                viewBox='0 0 16 16'
-                width='16'
-                height='16'
-                fill='currentColor'
-              >
-                <path d='M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z' />
-              </svg>
-              Ask the community on Slack
             </a>
           </div>
         </div>
